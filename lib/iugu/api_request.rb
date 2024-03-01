@@ -23,7 +23,7 @@ module Iugu
 
     def self.build_request(method, url, data)
       {
-        verify_ssl: true,
+        verify_ssl: false,
         headers: default_headers,
         method: method,
         payload: data.to_json,
